@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.left{
+    width: 40%;
+    height: 100%;
+    position: relative;
+    
+}
+.right{
+    width: 60%;
+    height: 100%;
+    background-color: white;
+}
+.rtop{
+    height: 50%;
+    width: 100%;
+    /* background-color:black; */
+     display: flex; 
+    
+}
+.rbottom{
+    height: 50%;
+    width: 100%;
+    /* background-color: #021021; */
+    background-image: url("/rbottom.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.rtop-left{
+    width: 50%;
+    height: 100%;
+    background-image: url("/rtop-left.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.rtop-right{
+    width: 50%;
+    height: 100%;
+    background-image: url("/rtop-right.jpg");
+    background-position: bottom;
+    background-size: cover;
+}
+.lnav{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 20px;
+}
+.lnavr  a{
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 3.5rem;
+    color: #021021;
+    text-transform: uppercase;
+
+}
+#icon{
+    font-size: 2.8rem;
+    cursor:pointer;
+}
+#twt-icon{
+    font-size: 2.8rem;
+    color: royalblue;
+    cursor:pointer;
+}
+.text-center{
+    position: absolute;
+    top: 50%;
+    left: 50%   ;
+    transform: translate(-50%,-50%);
+}
+.read a{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: royalblue;
+    border-bottom: 1px solid #021021;
+    padding-bottom: 7px;
+    font-weight: 600;
+    opacity: .7;
+}
+.read{
+    margin-top: 3rem;
+}
+.para{
+    width: 100%;
+    height: 100%;
+    font-size: 1.8rem;
+    opacity: .6;
+    line-height: 33px;
+}
+.text-center h1{
+    font-size: 9rem;
+    margin-bottom: 4rem;
+}
+@media(max-width: 500px){
+    .main{
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+    .lnav a{
+        font-size: 15px;
+    }
+    .lnavr a{
+        margin: 3px;
+    }
+    .text-center h1{
+        font-size: 35px;
+        margin-bottom: 5px;
+    }
+    .para{
+        font-size: 10px;
+        line-height: 8px;
+    }
+    .read{
+        margin-top: 15px;
+    }
+    #icon,#twt-icon{
+        font-size: 20px;
+    }
+    
+}
